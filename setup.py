@@ -18,7 +18,7 @@ test_requirements = ['pytest>=3', ]
 
 setup(
     name='attachtags',
-    version='0.1.0',
+    version='0.1.1',
     author="Gongzi Yu",
     author_email='1920781522@qq.com',
     description="This is a tool to help manage your files by attaching \

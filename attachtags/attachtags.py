@@ -51,7 +51,7 @@ def _main():
     if args.list:
         map_ = tag_maps.get_map()
         for tag in map_.keys():
-            print(f'{tag}:\n - '+' - \n'.join(map_[tag]))
+            print(f'{tag}:\n - '+'\n - '.join(map_[tag]))
     else:
         assert args.key_ in COMMANDS
         arg_to_map(args, tag_maps)

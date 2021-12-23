@@ -64,16 +64,16 @@ def add_rename_parse(subparsers):
 def add_show_parse(subparsers):
     show = subparsers.add_parser(
         "show",
-        help="show tags from some file")
-    show.add_argument("file",
+        help="show tags from some path")
+    show.add_argument("path",
                       type=str,
                       nargs="+",
-                      help="one file you want to show")
+                      help="one path you want to show")
     man_show = show.add_mutually_exclusive_group()
     man_show.add_argument("-s", "--some",
                           action="store_true",
                           default=False,
-                          help="show some files")
+                          help="show some paths")
     # man_show.add_argument("--use-pickle", action="store_true",
     #                       default=False, help="use pickle")
     add_key(show)
@@ -82,7 +82,7 @@ def add_show_parse(subparsers):
 def add_search_parse(subparsers):
     search = subparsers.add_parser(
         "search",
-        help="search files with this tags in this path")
+        help="search paths with this tags in this path")
     search.add_argument("goal_path",
                         type=str,
                         nargs='?',
@@ -91,10 +91,6 @@ def add_search_parse(subparsers):
                         type=str,
                         nargs="+",
                         help="tag you want to search")
-    search.add_argument("--include-dir",
-                        action="store_true",
-                        default=False,
-                        help="iterate over folders")
     search.add_argument("-a", "--abs",
                         action="store_true",
                         default=False,
@@ -108,11 +104,11 @@ def add_search_parse(subparsers):
 def add_attach_parse(subparsers):
     attach = subparsers.add_parser(
         "attach",
-        help="attach a tag to some files")
-    attach.add_argument("files",
+        help="attach a tag to some paths")
+    attach.add_argument("paths",
                         type=str,
                         nargs="+",
-                        help="file you want to attach to")
+                        help="path you want to attach to")
     attach.add_argument("tag",
                         type=str,
                         # nargs='?',
@@ -122,23 +118,23 @@ def add_attach_parse(subparsers):
     man_attach.add_argument("--all-in-dirs",
                             action="store_true",
                             default=False,
-                            help="attach tag to files all in path you \
-                                enter,replacing files with some paths")
+                            help="attach tag to paths all in dirs you \
+                                enter")
     # man_attach.add_argument("--use-pickle",
     #                         action="store_true",
     #                         default=False,
-    #                         help="replace file with .pickle you enter")
+    #                         help="replace path with .pickle you enter")
     add_key(attach)
 
 
 def add_remove_parse(subparsers):
     remove = subparsers.add_parser(
         "remove",
-        help="remove a tag from some files")
-    remove.add_argument("files",
+        help="remove a tag from some paths")
+    remove.add_argument("paths",
                         type=str,
                         nargs="+",
-                        help="file you want to remove on")
+                        help="path you want to remove on")
     remove.add_argument("tag",
                         type=str,
                         # nargs='?',
@@ -148,12 +144,12 @@ def add_remove_parse(subparsers):
     man_remove.add_argument("--all-in-dirs",
                             action="store_true",
                             default=False,
-                            help="remove tag from files all in paths you \
-                               enter, replacing file with some paths")
+                            help="remove tag from paths all in paths you \
+                               enter, replacing path with some paths")
     # man_remove.add_argument("--use-pickle",
     #                         action="store_true",
     #                         default=False,
-    #                         help="replace file with .pickle you enter")
+    #                         help="replace path with .pickle you enter")
     add_key(remove)
 
 
