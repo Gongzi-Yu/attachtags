@@ -2,7 +2,7 @@
 History
 =======
 
-0.1.1 (2021-12-23)
+0.1.2 (2021-12-23)
 ------------------
 
 * Support attaching tags to folders.
