@@ -1,9 +1,6 @@
 attachtags package
 ==================
 
-Submodules
-----------
-
 attachtags.argtomap module
 --------------------------
 

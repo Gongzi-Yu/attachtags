@@ -2,6 +2,9 @@
 Usage
 =====
 
-To use AttachTags in a project::
+To use AttachTags in console
 
-    import attachtags
+.. code-block:: console
+
+    $ pip install attachtags
+    $ attachtags -h
