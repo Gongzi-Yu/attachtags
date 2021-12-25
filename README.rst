@@ -77,7 +77,7 @@ Usage
 
 .. _header-n13:
 
-``-h`` 、 ``-v`` 、 ``-l``
+``-h`` , ``-v`` , ``-l``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``-h`` is used to display help documents, you can use ``-h`` for all ``{create,delete,rename,show,search,attach,remove}`` to display the corresponding help documents;
@@ -85,7 +85,7 @@ Usage
 
 .. _header-n16:
 
-``create`` 、 ``delete`` 、 ``rename``
+``create`` , ``delete`` , ``rename``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``create`` is used to create one or more new tags
@@ -96,7 +96,7 @@ Usage
 
 .. _header-n20:
 
-``attach`` 、 ``remove``
+``attach`` , ``remove``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``attach`` is used to attach a tag to a file or folder, using ``--all-in-dirs`` can attach a tag to all files and folders in a folder;
@@ -105,7 +105,7 @@ Usage
 
 .. _header-n23:
 
-``show`` 、 ``search``
+``show`` , ``search``
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``show`` can show the tags attached to a file or folder, and use ``-s`` to show multiple tags;
