@@ -3,7 +3,6 @@
 """The setup script."""
 
 from setuptools import setup, find_packages
-from attachtags import script_name, __author__, __email__, __version__
 
 
 with open('README.rst') as readme_file:
@@ -19,10 +18,10 @@ requirements = [
 test_requirements = ['pytest>=3', ]
 
 setup(
-    name=script_name,
-    version=__version__,
-    author=__author__,
-    author_email=__email__,
+    name='attachtags',
+    version='0.1.2',
+    author='Gongzi Yu',
+    author_email='1920781522@qq.com',
     description="attachtags is a tool for recording and \
 categorizing files in your Windows.",
     long_description=readme + '\n\n' + history,
