@@ -122,4 +122,4 @@ def _remove(arg, tag_maps: TagMaps):
 
 def arg_to_map(arg: argparse.ArgumentParser, tag_maps: TagMaps):
     exec("_"+arg.key_+"(arg, tag_maps)")
-    logging.info(f"{arg.key_.upper()} is OK!!!")
+    logging.info(f"{arg.key_.upper()} is over!!!")

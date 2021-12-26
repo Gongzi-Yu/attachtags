@@ -14,13 +14,11 @@ def exist_or_not(function):    # 判断是否有这个tag
             return True
         else:
             logging.error(f"Fail {function.__name__}:: not the \
-tag: {args[0]}", end="")
+tag: {args[0]}")
 #             print(f"""Fail {function.__name__}
 #  - not the tag: {args[0]}""", end="")
             if len(args) > 1:
-                print(f""" for {args[1]}""")
-            else:
-                print('\n')
+                print(f"""    for {args[1]}""")
             return False
     return wrapper
 

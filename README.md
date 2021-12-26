@@ -1,6 +1,6 @@
 # AttachTags
 
-attachtags是一个用来记录和归类你Windows里文件的工具。用来帮你把一些难以记住文件名的文件进行整理、归类。
+`attachtags`是一个用来记录和归类你`Windows`里文件的工具。用来帮你把一些难以记住文件名的文件进行整理、归类。
 
 ## 介绍
 
@@ -10,7 +10,7 @@ attachtags是一个用来记录和归类你Windows里文件的工具。用来帮
 
 attachtags就是为了解决这个问题而做出的命令行脚本工具。通过给文件或文件夹添加一个好记的标签，来达到记录、归类文件的目的。
 
-## attachtags命令
+## attachtags 命令
 
 ```
 usage: attachtags [-h] [-v] [-l]
@@ -34,7 +34,7 @@ optional arguments:
 
 ## 安装
 
-首先、你的电脑里必须要有python（版本>=3.7）！
+首先、你的电脑里必须要有`python（版本>=3.7）`！
 
 ### 使用`pip`
 

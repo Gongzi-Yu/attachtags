@@ -19,7 +19,7 @@ test_requirements = ['pytest>=3', ]
 
 setup(
     name='attachtags',
-    version='0.1.2',
+    version='0.1.3',
     author='Gongzi Yu',
     author_email='1920781522@qq.com',
     description="attachtags is a tool for recording and \
